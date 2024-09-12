@@ -17,8 +17,30 @@ body {
     color: #fff;
 }
 
+/*  "flex-wrap" : determines how flex items behave when the container is too small
+    "wrap" moves them to a new line "nowrap" keeps them thensame.
+    "justify-content" : positions flex items along the x-axis when they don't all fit
+    "align-items" : positions flex items along y-axis
+    "gap" : determines gap between rows and columns in flex container
+*/
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+/*
+"object-fit" determines how image fit container while respecting aspect ratio
+*/
 .gallery img {
     width: 100%;
     max-width: 350px;
     height: 300px;
+    object-fit: cover;
 }
