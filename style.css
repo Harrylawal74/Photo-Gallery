@@ -42,5 +42,16 @@ body {
     width: 100%;
     max-width: 350px;
     height: 300px;
-    object-fit: cover;
+    object-fit: cover;  
+    border-radius: 10px;
+}
+
+/*
+"::after" creates element that is child of selected element e.g. creates element of gallery
+    "content" is the content of this element 
+     here the element is empty and is 350px which pushes the other picture inline.
+*/
+.gallery::after {
+    content: "";
+    width: 350px;
 }
